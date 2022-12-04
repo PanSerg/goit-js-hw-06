@@ -20,4 +20,4 @@ const galleryElString = galleryEl.join("");
 console.log(galleryElString);
 
 const galleryNodeEl = document.querySelector(".gallery");
-galleryNodeEl.insertAdjacentHTML("afterbegin", galleryEl);
+galleryNodeEl.insertAdjacentHTML("afterbegin", galleryEl.join(''));
