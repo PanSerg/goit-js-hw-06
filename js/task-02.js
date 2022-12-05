@@ -1,3 +1,5 @@
+const someList = document.querySelector("#ingredients");
+
 const ingredients = [
   "Potatoes",
   "Mushrooms",
@@ -12,9 +14,12 @@ const elements = ingredients.map((element) => {
   li.classList.add("item");
   li.textContent = element;
   return li
+
 });
 
-someListRef.append(...elements)
+someList.append(...elements)
+
+
 
 
 
