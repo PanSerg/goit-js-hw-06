@@ -6,8 +6,8 @@ form.addEventListener("submit", onFormSubmit);
 function onFormSubmit(event) {
   event.preventDefault();
 
-    const email = event.currentTarget.email;
-    const password = event.currentTarget.password;
+  const email = event.currentTarget.email.value.trim();
+  const password = event.currentTarget.password.value.trim();
     if (!email || !password) {
         alert("Fill all fields");
         

@@ -1,5 +1,10 @@
-const navEl = document.querySelectorAll("li.item");
-console.log(navEl);
+const totalCategories = document.querySelectorAll(".item");
+console.log(`В списке ${totalCategories.length} категории.`);
 
-const category = document.querySelector("#categories");
-console.dir(category.textContent);
+const categoriesArray = [...totalCategories]
+  .map(
+    (categories) => `Категория: ${categories.children[0].textContent}
+Количество элементов: ${categories.children[1].children.length}`
+  )
+  .join("\n");
+console.log(categoriesArray);
